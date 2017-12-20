@@ -21,7 +21,7 @@ spec:
         run: rest-jscreditscore
     spec:
       containers:
-      - image: wcr.io/$WERCKER_APPLICATION_OWNER_NAME/$WERCKER_APPLICATION_NAME:$WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
+      - image: docker.io/$DOCKER_REPOSITORY:$WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
         imagePullPolicy: Always
         name: rest-jscreditscore
         ports:
